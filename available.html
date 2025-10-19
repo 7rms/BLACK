@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Available Cars — Black</title>
+  <style>
+    body {margin:0; background:#fff; color:#000; font-family:'Helvetica Neue',Arial,sans-serif;}
+    header {background:#000; color:#fff; padding:18px 22px; display:flex; align-items:center; gap:12px;}
+    header a {color:#fff; text-decoration:none; font-weight:700; font-size:20px;}
+    .grid {display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:34px; padding:36px;}
+    .card {background:#f8f8f8; border-radius:16px; padding:18px; display:flex; flex-direction:column; align-items:center;}
+    .thumb {width:100%; height:150px; border-radius:16px; overflow:hidden; display:flex; align-items:center; justify-content:center;}
+    .thumb img {width:100%; height:100%; object-fit:contain;}
+    .title {margin-top:12px;font-weight:600;}
+    .book-btn {margin-top:12px; padding:10px 22px; border-radius:999px; background:#000; color:#fff; text-decoration:none; font-weight:600;}
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html">← Available Cars</a>
+  </header>
+  <main>
+    <div class="grid">
+      <div class="card">
+        <div class="thumb"><img src="images-bmw.jpg" alt="BMW 7 Series"></div>
+        <div class="title">BMW 7 Series</div>
+        <a class="book-btn" href="yourCar.html?car=bmw">Book</a>
+      </div>
+      <div class="card">
+        <div class="thumb"><img src="images-lucid.jpg" alt="Lucid AIR"></div>
+        <div class="title">Lucid AIR Car</div>
+        <a class="book-btn" href="yourCar.html?car=lucid">Book</a>
+      </div>
+      <div class="card">
+        <div class="thumb"><img src="images-changan.jpg" alt="Changan Uni V"></div>
+        <div class="title">Changan Uni V</div>
+        <a class="book-btn" href="yourCar.html?car=changan">Book</a>
+      </div>
+      <div class="card">
+        <div class="thumb"><img src="images-mercedes.jpg" alt="Mercedes G Wagon"></div>
+        <div class="title">Mercedes G Wagon</div>
+        <a class="book-btn" href="yourCar.html?car=mercedes">Book</a>
+      </div>
+      <div class="card">
+        <div class="thumb"><img src="images-tesla.jpg" alt="Tesla Model S"></div>
+        <div class="title">Tesla Model S</div>
+        <a class="book-btn" href="yourCar.html?car=tesla">Book</a>
+      </div>
+      <div class="card">
+        <div class="thumb"><img src="images-audi.jpg" alt="Audi A8"></div>
+        <div class="title">Audi A8</div>
+        <a class="book-btn" href="yourCar.html?car=audi">Book</a>
+      </div>
+      <div class="card">
+        <div class="thumb"><img src="images-lexus.jpg" alt="Lexus LS 500"></div>
+        <div class="title">Lexus LS 500</div>
+        <a class="book-btn" href="yourCar.html?car=lexus">Book</a>
+      </div>
+      <div class="card">
+        <div class="thumb"><img src="images-cadillac.jpg" alt="Cadillac Escalade"></div>
+        <div class="title">Cadillac Escalade</div>
+        <a class="book-btn" href="yourCar.html?car=cadillac">Book</a>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
