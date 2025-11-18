@@ -5,98 +5,226 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Your Car — Black</title>
   <style>
-    body {margin:0; background:#fff; color:#000; font-family:'Helvetica Neue',Arial,sans-serif;}
-    header {background:#000; color:#fff; padding:18px 20px; display:flex; align-items:center; gap:12px;}
-    header a {color:#fff; text-decoration:none; font-weight:700; font-size:20px;}
-    .content {display:flex; flex-wrap:wrap; gap:28px; padding:28px;}
-    .left {flex:1; min-width:300px;}
-    .right {width:380px; min-width:260px;}
-    .car-card {background:#f5f5f5; padding:18px; border-radius:20px;}
-    .car-thumb {width:100%; height:220px; border-radius:16px; overflow:hidden;}
-    .car-thumb img {width:100%; height:100%; object-fit:contain;}
-    h2 {margin:0 0 12px; font-size:26px;}
-    ol {color:#333; line-height:1.6;}
-    .actions {display:flex; gap:18px; margin-top:18px;}
-    .btn-decline {padding:12px 28px; border-radius:30px; border:none; cursor:pointer; color:#fff; font-weight:600;}
-    .btn-accept {padding:12px 28px; border-radius:30px; border:none; cursor:pointer; color:#fff; font-weight:600;}
-    .btn-decline {background:#FF0000;}
-    .btn-accept {background:#00FF00;}
+    body {
+      margin: 0;
+      background: #f5f5f5;
+      color: #000;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+    }
+
+    /* Header */
+    header {
+      background: #000;
+      color: #fff;
+      padding: 18px 24px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    header a.back-arrow {
+      color: #fff;
+      text-decoration: none;
+      font-size: 24px;
+      line-height: 1;
+    }
+
+    header .header-title {
+      font-size: 22px;
+      font-weight: 700;
+    }
+
+    /* Page layout */
+    main.page {
+      padding: 24px 16px 32px;
+    }
+
+    .card {
+      max-width: 1120px;
+      margin: 0 auto;
+      background: #ffffff;
+      border-radius: 18px;
+      padding: 24px 28px 26px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+    }
+
+    .top {
+      display: flex;
+      gap: 40px;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+
+    .left {
+      flex: 2;
+      min-width: 260px;
+    }
+
+    .right {
+      flex: 1;
+      min-width: 260px;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    h2 {
+      margin: 0 0 10px;
+      font-size: 22px;
+    }
+
+    ol {
+      margin: 0 0 18px 20px;
+      padding: 0;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    /* Car box on the right */
+    .car-box {
+      border-radius: 18px;
+      border: 2px solid #d2d8f0;
+      padding: 16px 18px 12px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 360px;
+    }
+
+    .car-thumb {
+      width: 100%;
+      height: 210px;
+      border-radius: 14px;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #f7f7f7;
+    }
+
+    .car-thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    #carName {
+      margin-top: 10px;
+      font-weight: 500;
+      align-self: flex-start;
+      color: #333;
+    }
+
+    /* Buttons */
+    .actions {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 24px;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .btn {
+      min-width: 150px;
+      padding: 12px 32px;
+      border-radius: 30px;
+      border: none;
+      font-size: 18px;
+      font-weight: 600;
+      cursor: pointer;
+      color: #fff;
+    }
+
+    .btn-decline {
+      background: #ff4a4a;
+    }
+
+    .btn-accept {
+      background: #4caf50;
+    }
+
+    .btn:focus {
+      outline: none;
+    }
   </style>
 </head>
 <body>
   <header>
-    <a href="available.html">← Your Car</a>
+    <a href="available.html" class="back-arrow">←</a>
+    <span class="header-title">Your Car</span>
   </header>
-  <section class="content">
-    <div class="left">
-      <h2>Renter Requirements</h2>
-      <ol>
-        <li>Age: Must be at least 21 years old.</li>
-        <li>Valid Documents: A valid driving license (Saudi or recognized international license) and proof of identity (National ID or Passport).</li>
-        <li>Credit Card: May be required for payment and security deposit, with sufficient available balance.</li>
-        <li>Criminal Record: Must be free of criminal convictions.</li>
-      </ol>
-            <h2>Renter Obligations</h2>
-            
-            <ol>
-                <li>Vehicle Condition: Receive the vehicle in good condition and take proper care of it.</li>
-                <li>Usage: Use the vehicle for intended purposes only; not allowed for racing or transporting unauthorized goods.</li>
-                <li>Modifications: No modifications or additions to the vehicle without the company’s approval.</li>
-                <li>Insurance: Comply with the terms of the insurance policy.</li>
-                <li>Delays: Late returns may incur a fee equivalent to the daily rental rate.</li>
-                <li>Fuel: Return the vehicle with the same fuel level as received or pay refueling charges.</li>
-                <li>Damages and Violations: Responsible for any traffic violations, damages, or car defects, including those not covered by insurance.</li>
-              </ol>
-            <h2>Ethical Guidelines for Renters 
-</h2>
-            
-            <ol>
-                <li>Respect: Treat the car carefully and keep it clean.</li>
-                <li>Honesty: Provide accurate personal and license information.</li>
-                <li>Responsible Use: Use the car only for intended purposes and follow traffic rules.</li>
-                <li>Timeliness: Return the car on time with the same fuel level.</li>
-                <li>Integrity: Avoid unauthorized modifications or misuse.</li>
-                
-              </ol>
+
+  <main class="page">
+    <section class="card">
+      <div class="top">
+        <div class="left">
+          <h2>Renter Requirements</h2>
+          <ol>
+            <li>Age: Must be at least 21 years old.</li>
+            <li>Valid Documents: A valid driving license (Saudi or recognized international license) and proof of identity (National ID or Passport).</li>
+            <li>Credit Card: May be required for payment and security deposit, with sufficient available balance.</li>
+            <li>Criminal Record: Must be free of criminal convictions.</li>
+          </ol>
+
+          <h2>Renter Obligations</h2>
+          <ol>
+            <li>Vehicle Condition: Receive the vehicle in good condition and take proper care of it.</li>
+            <li>Usage: Use the vehicle for intended purposes only; not allowed for racing or transporting unauthorized goods.</li>
+            <li>Modifications: No modifications or additions to the vehicle without the company’s approval.</li>
+            <li>Insurance: Comply with the terms of the insurance policy.</li>
+            <li>Delays: Late returns may incur a fee equivalent to the daily rental rate.</li>
+            <li>Fuel: Return the vehicle with the same fuel level as received or pay refueling charges.</li>
+            <li>Damages and Violations: Responsible for any traffic violations, damages, or car defects, including those not covered by insurance.</li>
+          </ol>
+        </div>
+
+        <div class="right">
+          <div class="car-box">
+            <div class="car-thumb">
+              <img id="carImg" src="" alt="">
+            </div>
+            <div id="carName"></div>
+          </div>
+        </div>
+      </div>
+
       <div class="actions">
-        <button class="btn-decline" onclick="alert('You have declined the booking.')">Decline</button>
-        <button class="btn-accept" id="acceptBtn">Accept</button>
+        <button class="btn btn-decline" onclick="alert('You have declined the booking.')">Decline</button>
+        <button class="btn btn-accept" id="acceptBtn">Accept</button>
       </div>
-    </div>
-    <div class="right">
-      <div class="car-card">
-        <div class="car-thumb"><img id="carImg" src="" alt=""></div>
-        <div id="carName" style="padding-top:12px;font-weight:600;color:#333"></div>
-      </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
   <script>
-   
     const cars = {
-      bmw: {name:'BMW 7 Series', img:'images-bmw.jpg', desc:'Your BMW 7 Series is ready for pickup!'},
-      lucid: {name:'Lucid AIR Car', img:'images-lucid.jpg', desc:'Your Lucid AIR Car is ready for pickup!'},
-      changan: {name:'Changan Uni V', img:'images-changan.jpg', desc:'Your Changan Uni V is ready for pickup!'},
-      mercedes: {name:'Mercedes G Wagon', img:'images-mercedes.jpg', desc:'Your Mercedes G Wagon is ready for pickup!'},
-      tesla: {name:'Tesla Model S', img:'images-tesla.jpg', desc:'Your Tesla Model S is ready for pickup!'},
-      audi: {name:'Audi A8', img:'images-audi.jpg', desc:'Your Audi A8 is ready for pickup!'},
-      lexus: {name:'Lexus LS 500', img:'images-lexus.jpg', desc:'Your Lexus LS 500 is ready for pickup!'},
-      cadillac: {name:'Cadillac Escalade', img:'images-cadillac.jpg', desc:'Your Cadillac Escalade is ready for pickup!'}
+      bmw:      { name: 'BMW 7 Series',        img: 'images-bmw.jpg' },
+      lucid:    { name: 'Lucid AIR Car',       img: 'images-lucid.jpg' },
+      changan:  { name: 'Changan Uni V',       img: 'images-changan.jpg' },
+      mercedes: { name: 'Mercedes G Wagon',    img: 'images-mercedes.jpg' },
+      tesla:    { name: 'Tesla Model S',       img: 'images-tesla.jpg' },
+      audi:     { name: 'Audi A8',             img: 'images-audi.jpg' },
+      lexus:    { name: 'Lexus LS 500',        img: 'images-lexus.jpg' },
+      cadillac: { name: 'Cadillac Escalade',   img: 'images-cadillac.jpg' }
     };
 
+    const params   = new URLSearchParams(window.location.search);
+    const carKey   = params.get('car');
+    const carImg   = document.getElementById('carImg');
+    const carName  = document.getElementById('carName');
+    const acceptBtn = document.getElementById('acceptBtn');
 
-    const params = new URLSearchParams(window.location.search);
-    const carKey = params.get('car');
-
-    if(carKey && cars[carKey]){
-      document.getElementById('carImg').src = cars[carKey].img;
-      document.getElementById('carImg').alt = cars[carKey].name;
-      document.getElementById('carName').textContent = cars[carKey].name;
-      document.getElementById('acceptBtn').onclick = () => alert(cars[carKey].desc);
+    if (carKey && cars[carKey]) {
+      carImg.src = cars[carKey].img;
+      carImg.alt = cars[carKey].name;
+      carName.textContent = cars[carKey].name;
     } else {
-      document.getElementById('carName').textContent = 'Car not found';
-      document.getElementById('acceptBtn').onclick = () => alert('Car not found.');
+      carName.textContent = 'Car not found';
     }
+
+    // Accept → go to ready.html
+    acceptBtn.onclick = () => {
+      window.location.href = 'ready.html';
+    };
   </script>
 </body>
 </html>
